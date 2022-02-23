@@ -1,13 +1,18 @@
 import * as ccxt from 'ccxt';
-import { client0, client2 } from './client.credentials';
+// import { client0, client2 } from './client.credentials';
+require('dotenv').config(); 
+
+const API_KEY = process.env.API_KEY;
+const SECRET = process.env.SECRET;
+const SUBACCOUNT = process.env.SUBACCOUNT;
 
 export const exchangeId = 'ftx'
     , exchangeClass = ccxt[exchangeId]
     , exchange = new exchangeClass ({
-      apiKey: client2.apiKey,
-      secret: client2.secret,
+      apiKey: API_KEY,
+      secret: SECRET,
       'headers': {
-        'FTX-SUBACCOUNT':client2.subAccount
+        'FTX-SUBACCOUNT':SUBACCOUNT
       }
     })
 
