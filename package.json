@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "author": "",
+  "heroku config" :"set NPM_CONFIG_PRODUCTION=false && set NODE_ENV=production",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
@@ -28,6 +29,7 @@
     "aws-sdk": "^2.1079.0",
     "axios": "^0.24.0",
     "ccxt": "^1.66.57",
+    "config": "^3.3.7",
     "dotenv": "^16.0.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
