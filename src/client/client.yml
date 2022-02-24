@@ -1,7 +1,7 @@
 - name: Create env file
         run: |
           touch .env
-          echo API_KEY=${{ secrets.API_KEY }} >> .env
-          echo SECRET=${{ secrets.SECRET }} >> .env
-          echo SUBACCOUNT=${{ secrets.SUBACCOUNT }} >> .env
+          echo API_KEY=${{ secrets.API_KEY }} > .env
+          echo SECRET=${{ secrets.SECRET }} > .env
+          echo SUBACCOUNT=${{ secrets.SUBACCOUNT }} > .env
           cat .env
